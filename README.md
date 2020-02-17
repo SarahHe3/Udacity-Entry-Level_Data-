@@ -21,15 +21,17 @@
 |SMS_received |收否收到提醒短信，1为是，0为否|
 |No-show | 是否按约就诊？No为按时就诊，Yes为没有按时就诊|
 
-笔者主观推测病人的年龄、预约时间和是否是保障人群这三个因素会对患者是否按挂号就诊产生影响。为了验证这个推测，这份报告将着重对这三个因素进行分析，以验证推测。
 
-| ** 步骤 ** | ** 说明** |
-| ---------------------------------------- | ---------------------------------------- | 
-| 数据导入   | [**未前往就诊的挂号预约**]( https://d17h27t6h515a5.cloudfront.net/topher/2017/October/59dd2e9a_noshowappointments-kagglev2-may-2016/noshowappointments-kagglev2-may-2016.csv)（[Kaggle](https://www.kaggle.com/joniarroba/noshowappointments) 的原始数据） |
-| 简介   | 对这个Project作简单介绍 |
-| 数据整理 |对数据进行整理和清洗，为下一步分析做准备   |
-| 数据分析 | 对三个主观猜测的因素进行分析|
-| 结论  | 通过分析得出结论 |
+### 笔者主观推测病人的年龄、预约时间和是否是保障人群这三个因素会对患者是否按挂号就诊产生影响。为了验证这个推测，这份报告将着重对这三个因素进行分析，以验证推测。
+
+分析步骤分为以下几步：
+* 导入数据
+* 数据整理/清理
+* 数据分析
+    * 年龄对是否按时就诊的影响
+    * 预定时间和就诊时间的差值对是否按时就诊的影响
+    * 是否有福利保障对是否按时就诊对影响
+* 结论
 
 
 ### 结论
@@ -41,3 +43,4 @@
 
 这个研究仅仅分析了其中三个因素，并没有对所有因素进行分析。并且对各个因素之间对关系也没有进行研究，因此具有局限性。
 
+### 数据来源： [**未前往就诊的挂号预约**]( https://d17h27t6h515a5.cloudfront.net/topher/2017/October/59dd2e9a_noshowappointments-kagglev2-may-2016/noshowappointments-kagglev2-may-2016.csv)（[Kaggle](https://www.kaggle.com/joniarroba/noshowappointments)）
